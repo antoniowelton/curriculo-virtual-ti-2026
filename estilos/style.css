@@ -152,8 +152,10 @@ main > section.conteudo > div.curriculo {
     background-color: var(--cor1);    /*var(--cor1)*/
     padding: 2px;
     margin: 10px;
+
     width: 150px;
     height: 150px;
+  
     border-radius: 5%;
     box-shadow:3px 3px 8px var(--cor6);
 
@@ -169,6 +171,8 @@ main > section.conteudo > div.curriculo > picture > a > img  {
     border-radius: 5%;
       
 }
+
+
 
 main > section.conteudo > div.curriculo > picture > a > img:hover {
 
