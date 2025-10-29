@@ -26,6 +26,7 @@ body {
     background-color: var(--cor3);
     height: 100vh;
     width: 100vw;
+    overflow-x: hidden; /* Tirndo a barra de rolagem horizontal da tela*/
         
 }
 
@@ -317,7 +318,10 @@ section#redes-sociais img:hover {
 
 
 footer {
-    background-color:var(--cor2);
+   background-color:var(--cor2); 
+
+   /* background-image: linear-gradient(to top, rgb(3, 42, 78), rgb(77, 87, 51));*/
+
     color: rgb(255, 255, 255);
     width: 100vw;
     height: 120px;
@@ -330,7 +334,7 @@ footer {
 footer > p {
     font-family: 'Courier New', Courier, monospace;
     margin: auto;
-    font-size: .8em;
+    font-size: 1em;
     text-align: center;
     padding-top: 25px;
 }
