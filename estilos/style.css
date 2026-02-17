@@ -26,7 +26,7 @@ body {
     background-color: var(--cor3);
     height: 100vh;
     width: 100vw;
-    overflow-x: hidden; /* Tirndo a barra de rolagem horizontal da tela*/
+    overflow-x: hidden; /* Tirando a barra de rolagem horizontal da tela*/
         
 }
 
@@ -144,6 +144,10 @@ section.conteudo { /* Área das DIVs da Section Conteúdo (DIVS QUADRADAS) */
     justify-content: center;
 }
 
+section.conteudo p {  /* Parágrafos dentro da SECTION CONTEÚDO na aba "SOBRE") */
+    color: var(--cor6);
+}
+
 
 main > section > p {    
     color: white;
@@ -155,7 +159,7 @@ main > section > p {
 
 /* Montando a Versão Mobile First */
 
-/* Div que contem o contúdo "Instituição onde Estudei"*/
+/* Div que contem o conteúdo "Instituição onde Estudei"*/
 
 .conteudo > div {
     
