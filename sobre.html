@@ -12,11 +12,92 @@
 </head>
 <body>
     <style>
-        main > section.conteudo > p{
-            --cor2:rgb(3, 42, 78); 
 
+        
+       /* Estilo para a Div Pai (pode ser a section .sobre-mim) */
+        .sobre-mim {
+            font-family: 'Courier New', Courier, monospace;
+            text-transform: uppercase;
+            text-shadow: none;
+            width: 100vw;
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            background-color: rgb(255, 255, 255); /* Um fundo suave para destacar o card */ 
+
+            display: block;
+            flex-wrap: nowrap;
+            justify-items: center;
+                                   
+        }
+
+        /* Estilo para a Div Bio-Container ficar compacta */
+        .bio-container {
+            background-color: rgb(241, 241, 241);    
+            
+            margin: 0px;
+            padding: 10px;
+            max-width: 800px;
+            height: 100%;
+            border-radius: 12px;
+            box-shadow:3px 3px 15px var(--cor6);
+            text-align: center;
+            line-height: 1.8;
+
+            display: block;
+            flex-wrap: wrap;
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+
+        /* Ajuste para os títulos dentro da bio */
+        
+
+        .bio-container > h3 {
+            color: var(--cor2);
+            margin-top: 30px;
+            margin-bottom: 20px;
+            width: 100%;
+            background-color: #ffffff00;
+            
+            /* Força o título a ocupar a linha inteira */
+            display: block; 
+            
+            /* Centraliza o texto */
+            text-align: center; 
+            width: fit-content;    /* A borda terá apenas o tamanho do texto */
+            
+            /* Cria a linha decorativa centralizada abaixo do texto */
+            border-bottom: 3px solid #3498db;
+               
+            
+            
+            padding-bottom: 8px;
+        }
+        /* Ajuste para os parágrafos dentro da bio */
+        .conteudo > .bio-container > p {            
+            color: rgb(0, 0, 0);
+            text-align: justify;
+            padding: 20px;
+            line-height: 1.6;
+            text-indent: 30px;
+           
+        }
+
+        /* Estilo para a lista de itens (o que me move) */
+        .bio-container ul {
+            list-style: none;
+            padding: 20px;
+        }
+
+        .bio-container li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background: var(--cor3);
+            border-radius: 8px;
         }
     </style>
+             
     <main>
         <header>
         
@@ -36,25 +117,44 @@
             </nav>    
         </header>
 
-            <section class="conteudo">
-               <h1>Página de conteúdo sobre o criador</h1>
+        <section class="conteudo">
+                    
+            <h1 class="sobre-mim">Sobre Mim</h1>
+            
+            <div class="bio-container">
+                <p>
+                        Olá! Meu nome é <strong>Antonio Welton</strong>, sou natural do Ceará e atualmente resido em Piraquara, PR. 
+                        Minha jornada no mundo da tecnologia começou muito antes das linhas de código, através da minha formação 
+                        técnica em <strong>Eletrotécnica</strong> e da experiência durante a graduação em <strong>Mecatrônica Industrial</strong> onde tive o primeiro contato com lógica e linguagem de programação .
+                </p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic, sint doloremque distinctio recusandae eum. Atque fuga, a ab explicabo vel blanditiis fugiat voluptatem libero minus magnam provident placeat eveniet.</p>
-                
+                <p>
+                        Durante anos, lidei com lógica de instalação e manutenção de painéis elétricos. Essa base foi fundamental 
+                        para despertar minha verdadeira paixão: a <strong>Programação</strong>. Hoje, estou cursando 
+                        <strong>Análise e Desenvolvimento de Sistemas pelo Senac EAD</strong>, focando meus estudos no ecossistema 
+                        Front-End (HTML, CSS, JavaScript) e em Bancos de Dados SQL.
+                </p>
 
-               <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, eum ab officia doloremque optio distinctio deserunt repudiandae necessitatibus veniam pariatur et ratione natus provident quis animi nisi minima qui quaerat?</h2>
+                <p>
+                    Não posso deixar de mencionar que também uso de forma expressiva ferramentas como <strong>GitHub</strong>, <strong>Git</strong>, e <strong>MySQL Workbench</strong>.
+                </p>
 
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic, sint doloremque distinctio recusandae eum. Atque fuga, a ab explicabo vel blanditiis fugiat voluptatem libero minus magnam provident placeat eveniet.</p>
-                
+                <h3>Minha Transição para TI</h3>
+                <p>
+                        Acredito que o desenvolvimento de software é a evolução natural da automação que eu praticava enquanto <strong>eletrotécnico</strong>. 
+                        A disciplina e a capacidade analítica que adquiri na área técnica hoje são aplicadas na resolução de problemas 
+                        através do código, sempre buscando escrever soluções limpas, eficientes e focadas na experiência do usuário.
+                </p>
 
-               
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic, sint doloremque distinctio recusandae eum. Atque fuga, a ab explicabo vel blanditiis fugiat voluptatem libero minus magnam provident placeat eveniet.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic, sint doloremque distinctio recusandae eum. Atque fuga, a ab explicabo vel blanditiis fugiat voluptatem libero minus magnam provident placeat eveniet.</p>
-                
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic, sint doloremque distinctio recusandae eum. Atque fuga, a ab explicabo vel blanditiis fugiat voluptatem libero minus magnam provident placeat eveniet.</p>
-                
-                
-            </section>
+                <h3>O que me move</h3>
+                    <ul>
+                        <li>🚀 <strong>Aprendizado Contínuo:</strong> Estou sempre em busca de novas tecnologias e desafios.</li>
+                        <li>🧩 <strong>Resolução de Problemas:</strong> Adoro transformar problemas complexos em soluções simples.</li>
+                        <li>🤝 <strong>Colaboração:</strong> Valorizo o trabalho em equipe e a troca de conhecimentos (cultura Open Source).</li>
+                    </ul>
+            </div>
+        </section>
+            
 
     </main>
 
@@ -68,7 +168,7 @@
     </div>
 
 
-    <footer>
+    <footer> <!-- FOOTER --> 
         <p>
                 Site criado por <a href="https://github.com/antoniowelton" target="_blank" rel="external" alt="link-github"> <strong> <abbr title="Antonio Welton Barbosa Silva">Antonio Welton</abbr></strong> </a>  em Abril de 2025. <br> Todos os direitos reservados &copy
         </p>
